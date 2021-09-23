@@ -1,0 +1,14 @@
+.contain {
+    color:red ;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+    border: 5px solid dodgerblue;
+}
+
+h1{
+    color:blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

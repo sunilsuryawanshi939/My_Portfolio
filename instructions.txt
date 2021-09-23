@@ -1,0 +1,40 @@
+npm init -y
+npm i react react-dom 
+npm i webpack webpack-cli webpack-dev-server 
+npm i -D babel-loader css-loader node-sass sass-loader style-loader
+npm i html-webpack-plugin
+npm i --save-dev mini-css-extract-plugin
+npm i -D @babel/core @babel/preset-env @babel/preset-react
+npm run start
+
+-----------------------------------------------------------------
+[ webpack.config.js ]
+-----------------------------------------------------------------
+1) mode: 'production',  // mode may be development or none also
+2) performance: { hints: false },   // for removing warnings
+
+2)comment this
+//    devServer: { 
+//       inline: false,
+//       port: 8001
+//    },
+
+
+4) const MiniCssExtractPlugin =require('mini-css-extract-plugin');
+------------------------------------------------------------------
+ Package.json
+------------------------------------------------------------------
+1)add 
+"babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+
+2) Edit
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
+  },
+  ----------------------------------------------------------------
