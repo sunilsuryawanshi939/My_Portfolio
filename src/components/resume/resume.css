@@ -1,0 +1,60 @@
+/* resume */
+
+.resume {
+    padding-top: 20px;
+}
+
+.resume-card__heading,
+.resume-language__heading {
+    /* margin-left: 10px; */
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #354538;
+}
+
+.resume-card__body {
+    margin-top: 10px;
+}
+
+.resume-card__title {
+    font-weight: 700;
+}
+
+.resume-card__name {
+    font-size: 16px;
+}
+
+.resume-card__details {
+    font-size: 0.9rem;
+    padding-top: 5px;
+}
+
+
+
+@media (max-width:600px) {
+    .resume {
+        height: 75vh;
+        padding-top: 2px;
+        overflow-y: auto;
+    }
+
+    .resume__row{
+        padding-top: 10px;  
+    }
+
+    .resume-card__details {
+        margin-bottom: 5px;
+    }
+    p{
+        margin-bottom: 0px;
+    }
+
+    .resume-card__heading ,.resume-language__heading{
+        color:#0579e2;
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+    
+
+    
+}

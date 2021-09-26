@@ -3,7 +3,19 @@
 body {
     background-image: linear-gradient(to right bottom,#00F260,#0575E6);
     background-attachment: fixed;
+    color:#354548;
+    font-family: sans-serif;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right bottom, #00F260, #0575E6);
+
+}
+
 a {
     text-decoration: none;
     color: #354548;
@@ -13,11 +25,11 @@ a:hover {
     color: #000;
 }
 
-.container {
-    padding-top: 50px;
+.app__container {
+    padding-top: 20px;
 }
-.row {
-    height: 90vh;
+.app_row {
+    height: 86vh;
 }
 
 .app_main-content {
@@ -27,82 +39,35 @@ a:hover {
     box-shadow: 0 0 10px black;
 }
 
-/* sidebar */
-.sidebar {
-    height:100%;
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 25px 15px;
-    box-shadow: 0 0 10px black;
-    text-align: center;
-}
-.sidebar__avatar {
-    height: 110px;
-    width: 120px;
-    object-fit: contain;
-    border-radius: 30px;
-}
-.sidebar__icon {
-    height: 25px;
-    width: 25px;
-}
-
-.sidebar__name {
-    font-family: "Kaushan Script";
-    margin: 20px 0px;
-    font-size: 1.7rem;
-}
-
-.sidebar__name>span {
-    color:#00F260;
-}
-
-.sidebar__item {
-    margin-bottom: 6px;
-    padding-top: 6px;
-    height: 40px;
-    font-size: 1.05rem;
-    border-radius: 30px;
-}
-
-.sidebar__title {
-    background-color: #f1f1f1;
-    border-radius: 30px;
-}
-
-.email {
-    font-size: 15px;
-}
-
-.sidebar__contact{
-    background-color: #dbdddf ;
-    padding: 2px 0px;
-    margin:20px -15px;
-}
-
-.sidebar__email {
-    background-image: linear-gradient(to right bottom,#00F260,#0575E6);
-
-    border-radius: 30px;
-    color: #fff;
-    margin: 15px 25px 0px;
-    cursor: pointer;
-    transition: all 0.3s linear;
-}
-
-.sidebar__email:hover {
-    transform: scale(1.03);
-}
-
-.sidebar__resume:hover,
-.sidebar__github:hover {
-    background-color: #f1f1f2;
-    color: #000;
-
-}
-
 @media(max-width:991px) {
     .app_main-content{
         margin: 30px 0px;
     }
+}
+
+/* mobile view */
+@media (max-width:600px) {
+    .app_main-content {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top:15px;
+        height: 92vh;
+        padding:10px 5px;
+    }
+    .app_sidebar-content{
+        margin-right: 10px;
+        margin-left: 10px;
+        height: 92vh;
+        padding:10px 5px;
+    }
+
+    .navbar__active {
+        font-size: 1.5rem;
+    }
+    
+    .navbar__item {
+        font-size: 1rem;
+    }
+
+    
 }
